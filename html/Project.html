@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+
+		<title>Project</title>
+
+		<link rel="stylesheet" href="../css/project.css">
+
+    <style>
+      a {
+      text-decoration: none;
+      }
+    </style>
+
+    <script>
+
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+
+    </script>
+
+	</head>
+
+  <div id="mySidenav" class="sidenav">
+
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <a href="../index.html">Home Page</a>
+
+    <a href="Team & Personal Information.html">Team & Personal Information</a>
+
+    <a href="Ideal Jobs.html">Ideal Jobs</a>
+
+    <a href="Industry Data.html">Industry Data</a>
+
+    <a href="Information Technology Work.html">Information Technology Work</a>
+
+    <a href="I.T Technology.html">I.T Areas Of Interest</a>
+
+    <a href="Project.html" style = "color: white">Project</a>
+
+    <a href="Group Reflection.html">Group Reflection</a>
+
+  </div>
+
+  <body>
+
+    <div class = "container">
+
+      <div class = "container2">
+
+        <div class = "heading">
+
+          <div class = "image">
+
+            <img src = "../images/project.png" alt = "Project">
+
+          </div>
+
+          <div class = "navigation" onclick="openNav()"><!-- This is the navigation button which makes the navigation menu come across -->
+
+            <img src = "../images/navigation.png" alt = "Navigation">
+
+          </div>
+
+        </div>
+
+        <div class = "main-area">
+
+          <hr>
+
+          <h3>Project Idea and Motivation</h3>
+
+          <p>Our groups project idea has been derived from the idea used by Jade Gower in the first assignment. Her idea was essentially a wireless hub which can be linked to portable devices, such as key fobs, remotes and mobile phones, with a wireless chip. A corresponding button on the hub could then be pushed to make the device emit a sound so it could be found. As a group we have expanded on this idea taking it a few steps forward to pretty much offer the same functionality but through different means. The motivation behind the idea is simple, people lose stuff and they want to easily find it. Jades original assignment illustrates this by citing A 2017 study conducted by Bluetooth tracker company Tile (Brown, 2017)<sup>1</sup>, which shows that lost items have cost Australians $1.2Billion in the previous year (2018) alone.</p>
+
+          <hr>
+
+          <h3>Project Features</h3>
+
+          <h4>An early rendition of what our project might look like:</h4>
+
+          <img src = "../images/HUB.png" alt = "Mock Up of the Hubs design">
+
+          <h4>Technologies and features our project will use:</h4>
+
+          <ul>
+
+            <li>Bluetooth (5.1) device tracking</li>
+
+              <p>Range won’t be an issue for us because we intend to have Bluetooth receivers which will be placed throughout the house, these will be always on but very low power consumption. They will connect to each other as one device, then to a wireless network to send/receive information to the main hub. The main hub will illustrate the location of the device on the screen. Bluetooth 5.1 has been cited (Hoffman, 2019)<sup>2</sup> as being capable of giving location information to accuracy within 1cm since major improvements have been made to Angle of Arrival (AoA) and Angle of Departure (AoD) which are used for location and tracking of devices, making it ideal for things like finding a remote without taking off ALL the couch cushions. But it also presents the limitation, albeit it a small one, that multiple receivers would have to be within Bluetooth range of each other (around 10m-20m).</p>
+
+            <li>GPS Tracking</li>
+
+              <p>We will offer the option of GPS chips (Thomas, 2016)<sup>3</sup>, the reason we would use two technologies is simple, range and cost. A Bluetooth only tracker is very cheap compared to an always on GPS tracker which would also need to include a pre-paid sim card. However, due to range issues, without using expensively made and highly powered Bluetooth receivers and chips, range is limited to around 10m-20m, although this is a conservative estimate. To compensate for short range at the cost of financial expense, a GPS chip could be placed on a phone or wallet and used to track a device pretty much anywhere so if it’s lost or stolen outside range of the Bluetooth receivers it can still be located. However, this more expensive option would not be necessary for things like a remote control or possibly a key fob, or it could be, we just wish to offer some consumer choice. We would potentially include Wi-Fi in the GPS chip as well so that by combining Wi-Fi location tracking with GPS we could track devices more accurately and in areas with poor GPS accessibility/accuracy, such as cities and underground. This would of course also come down to a cost vs need analysis.</p>
+
+            <li>Wireless Charging</li>
+
+              <p>Each Bluetooth receiver device will also incorporate automatic detection of activated chips within its range so that the chip batteries can be charged wirelessly. New technology (Manz, 2018)<sup>4</sup> has recently emerged where wireless charging ranges have increased from requiring direct contact to being capable of distances up to roughly 15 feet (4.5 meters). We would also potentially offer an option where the chip can be charged via a cable from the hub or a USB port, however, this would require further research as we wish to keep the tracking chips as small and lightweight as possible to increase battery life and keep them aesthetically pleasing.</p>
+
+            <li>Room Mapping</li>
+
+              <p>During hub setup we will use software like PLNAR (Plnar.co, 2019)<sup>5</sup>, a room-mapping app that runs on Apple’s ARKit, which will map out the area within range of each receiver. This will either be run from a user’s phone or from the receivers themselves. We are leaning towards a phone so as to save overall cost when manufacturing the receivers however we will need to delve further into this to weigh up what the actual costs would be in creating and maintaining an application on multiple platforms as opposed to having something simple worked into the receiver which would also mean we are less likely to lose customer base. This information will then be displayed on the HUB when locating a device so that the user is easily able to identify location within the house. GPS tracking outside of this perimeter would be displayed using google map information.</p>
+
+            <li>Security Software</li>
+
+              <p>The hub would be able to connect to a user’s telephone using an app so that devices could be tracked, and information displayed on a user’s phone. We would also incorporate some additional software whereby if the phone was stolen the hub could send a signal to the phone application to take a photo which was then uploaded to a cloud server which could be used when pursuing criminal charges.</p>
+
+          </ul>
+
+          <hr>
+
+          <h3>Summary</h3>
+
+          <p>In summary our project has a wide range of applications which could be used not just by personal individuals but for various commercial applications, such as integration with various security systems. Advances in Bluetooth have made the system much less easily compromised than previous models and GPS in combination with WIFI tracking have been successfully used for years. By integrating these models into an accessible and easy to use package, which has low cost options and powerful applications at an additional cost, we feel we have come up with a device that appeals to a multitude of users from the old lady who doesn’t want to lose her remote, to the businessman who needs to be able to track and secure his devices throughout the world.</p>
+
+          <hr>
+
+        </div>
+
+        <footer>
+
+            <p>&copy; 2019 - The Prime Optimizers - <a href = "https://github.com/team-a3/Assignment-2">The Prime Optimizers GitHub Repository</a></p>
+
+            <p>Project written by Zachary Vine, mock up drawn by Nathan Jenkins, website code written and designed by Ethan Fleming.</p>
+
+            <p>(1) Brown, H. (2017). Can't find your keys? Study reveals Aussies lose stuff a lot, and it costs us billions. [online] Techly. Available at: <a href = "https://www.techly.com.au/2017/11/29/time-money-study-reveals-australians-lose-stuff-lot-costs-tonnes/">https://www.techly.com.au/2017/11/29/time-money-study-reveals-australians-lose-stuff-lot-costs-tonnes/</a> [Accessed 11 Jul. 2019].</p>
+
+            <p>(2) Hoffman, C. (2019). Bluetooth 5.1: What’s New and Why It Matters. [online] How-To Geek. Available at: <a href = "https://www.howtogeek.com/403606/bluetooth-5.1-whats-new-and-why-it-matters/">https://www.howtogeek.com/403606/bluetooth-5.1-whats-new-and-why-it-matters/</a> [Accessed 11 Jul. 2019].</p>
+
+            <p>(3) Thomas, A. (2016). How Do Micro GPS Tracking Chips Works - Trackimo. [online] Trackimo. Available at: <a href = "https://trackimo.com/micro-gps-tracking-chips/">https://trackimo.com/micro-gps-tracking-chips/</a> [Accessed 11 Jul. 2019].</p>
+
+            <p>(4) Manz, B. (2018). No Need to Wait for the “Best” Wireless-Charging Solution—Qi Is It. [online] Electronic Design. Available at: <a href = "https://www.electronicdesign.com/power/no-need-wait-best-wireless-charging-solution-qi-it">https://www.electronicdesign.com/power/no-need-wait-best-wireless-charging-solution-qi-it</a> [Accessed 11 Jul. 2019].</p>
+
+            <p>(5) Plnar.co. (2019). PLNAR -The AR 3D Measuring / Modeling Platform – Create accurate floor plans directly with your phone. [online] Available at: <a href = "https://plnar.co/">https://plnar.co/</a> [Accessed 11 Jul. 2019].</p>
+
+        </footer>
+
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
